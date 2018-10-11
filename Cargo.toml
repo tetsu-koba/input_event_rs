@@ -1,0 +1,9 @@
+[package]
+name = "input_event"
+version = "0.1.0"
+authors = ["Tetsuyuki Kobayashi <tetsu.koba@gmail.com>"]
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "*"
