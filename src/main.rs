@@ -7,7 +7,7 @@ use std::io;
 use std::io::Read;
 use std::fs::File;
 
-fn read_input_event(f: &mut File) -> io::Result<(input_event)> {
+fn read_input_event(f: &mut File) -> io::Result<input_event> {
     let mut buf = [0; std::mem::size_of::<input_event>()];
     f.read_exact(&mut buf)?;
     let ie: input_event = unsafe { std::mem::transmute(buf) };
