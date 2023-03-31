@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 mod input;
-use input::*;
+use crate::input::*;
 
 use std::io;
 use std::io::Read;
